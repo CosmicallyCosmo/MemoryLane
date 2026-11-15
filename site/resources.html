@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build &amp; links · Memory Lane</title>
+<meta name="description" content="Run Memory Lane yourself: the code, the docs, every command, the platforms it's built on and the sources behind it.">
+<meta name="theme-color" content="#0e343f">
+<link rel="icon" href="img/memorylane-mark.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/lexend.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a class="wordmark" href="index.html"><img src="img/memorylane-mark.svg" alt="">MemoryLane</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="index.html#try">Try it</a>
+      <a href="technology.html">How it works</a>
+      <a href="resources.html" aria-current="page">Build &amp; links</a>
+    </nav>
+    <a class="btn btn--small" href="https://github.com/CosmicallyCosmo/MemoryLane">GitHub</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-hero hero">
+  <div class="wrap">
+    <span class="chip reveal">Build &amp; links</span>
+    <h1 class="h-display reveal" style="--d:.08s;margin-top:22px;max-width:880px">Everything, in one place.</h1>
+    <p class="lede reveal" style="--d:.16s">The code, the docs, every command to run it, the platforms it's built on, and the sources behind every claim we make.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+
+    <div class="group">
+      <div class="links">
+        <a class="link-card link-card--hero reveal" href="https://github.com/CosmicallyCosmo/MemoryLane">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          <div><b>CosmicallyCosmo/MemoryLane</b><span>The whole project: glasses app, server, family app, docs and tests. MIT licence.</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2 class="h-2 reveal">The code</h2>
+      <p class="reveal">Four parts, one repository. In the code a memory is still called a <code>keepsake</code>, and a memory's film is sometimes a <code>tunnel</code>.</p>
+      <div class="links">
+        <a class="link-card reveal" href="https://github.com/CosmicallyCosmo/MemoryLane/tree/main/android"><b>Glasses app</b><span>Kotlin on Meta's Wearables Device Access Toolkit 1.0.1.</span><code>android/</code></a>
+        <a class="link-card reveal" style="--d:.05s" href="https://github.com/CosmicallyCosmo/MemoryLane/tree/main/server"><b>Server</b><span>Node and Express: memories, recognition, questions, films.</span><code>server/</code></a>
+        <a class="link-card reveal" style="--d:.1s" href="https://github.com/CosmicallyCosmo/MemoryLane/tree/main/family"><b>Family app</b><span>Vite and plain JavaScript, served by the server.</span><code>family/</code></a>
+        <a class="link-card reveal" href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/server/src/gemini.js"><b>Gemini client</b><span>Schema-bound calls, model fallback, the Decisions API.</span><code>server/src/gemini.js</code></a>
+        <a class="link-card reveal" style="--d:.05s" href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/server/src/cloudinary.js"><b>Cloudinary films</b><span>Every transformation URL the glasses play.</span><code>server/src/cloudinary.js</code></a>
+        <a class="link-card reveal" style="--d:.1s" href="https://github.com/CosmicallyCosmo/MemoryLane/tree/main/android/e2e"><b>End-to-end test</b><span>Drives the app on simulated glasses: 21 checks.</span><code>android/e2e/</code></a>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2 class="h-2 reveal">The docs</h2>
+      <p class="reveal">Written as we built it, including what didn't work.</p>
+      <div class="links">
+        <a class="link-card reveal" href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/README.md"><b>README</b><span>The overview: what it does, how it's built, what's checked.</span></a>
+        <a class="link-card reveal" style="--d:.1s" href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/docs/evidence.md"><b>Evidence</b><span>Sourced facts, and the list of what we must not claim.</span></a>
+        <a class="link-card reveal" style="--d:.05s" href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/docs/setup.md"><b>Setup</b><span>Pairing over Wi-Fi, every script and every setting.</span></a>
+        <a class="link-card reveal" style="--d:.1s" href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/docs/emulator-testing.md"><b>Emulator testing</b><span>Running the whole loop on an Android emulator.</span></a>
+        <a class="link-card reveal" href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/docs/heart-rate.md"><b>Heart rate</b><span>How the pulse is read, and why it's labelled simulated.</span></a>
+        <a class="link-card reveal" style="--d:.05s" href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/docs/meta-resources.md"><b>Meta resources</b><span>The developer docs and samples we used for the glasses.</span></a>
+      </div>
+    </div>
+
+    <div class="group" id="run">
+      <h2 class="h-2 reveal">Run it</h2>
+      <p class="reveal">You need Node 22 or newer, and Android Studio with SDK 36 for the glasses app. Keys go in <code>server/.env</code>, which git ignores. With no model key the server runs in rehearsal mode and recognises nothing.</p>
+      <div class="steps">
+        <div class="step reveal"><div><h3>Add your keys</h3><p><code>GEMINI_API_KEY</code> for recognition and memory lanes; <code>CLOUDINARY_URL</code> for the glasses films.</p>
+<pre class="code" data-copy="GEMINI_API_KEY=your-key
+CLOUDINARY_URL=cloudinary://key:secret@cloud"><span class="c"># server/.env</span>
+GEMINI_API_KEY=<span class="s">your-key</span>
+CLOUDINARY_URL=<span class="s">cloudinary://key:secret@cloud</span></pre></div></div>
+        <div class="step reveal"><div><h3>Start the server and the family app</h3><p>Open <code>http://localhost:8787</code>. The first person to arrive is walked through setup and becomes the organiser.</p>
+<pre class="code" data-copy="cd server && npm install && npm start
+cd family && npm install && npm run build">cd server &amp;&amp; npm install &amp;&amp; npm start      <span class="c"># http://localhost:8787</span>
+cd family &amp;&amp; npm install &amp;&amp; npm run build  <span class="c"># the server serves it at /</span></pre></div></div>
+        <div class="step reveal"><div><h3>Install the glasses app</h3><p>In the app, <b>Connect glasses</b> uses real glasses through the Meta AI app. <b>Use simulated glasses</b> uses Meta's Mock Device Kit.</p>
+<pre class="code" data-copy="adb reverse tcp:8787 tcp:8787
+cd android && ./gradlew installDebug">adb reverse tcp:8787 tcp:8787              <span class="c"># the phone reaches the server over USB</span>
+cd android &amp;&amp; ./gradlew installDebug</pre></div></div>
+        <div class="step reveal"><div><h3>Or all at once</h3><p>Starts the server, the emulator and the app on simulated glasses. On Windows use <code>./sim.sh</code> from Git Bash.</p>
+<pre class="code" data-copy="./dev.sh">./dev.sh</pre></div></div>
+        <div class="step reveal"><div><h3>Test and measure</h3><p>The demo household comes with a fortnight of use. The scorecard reports hits, misses, false matches and latency.</p>
+<pre class="code" data-copy="cd server
+npm test
+npm run seed:recordings -- ../recordings
+npm run scorecard -- <folder of photos>
+node ../android/e2e/run.mjs">cd server
+npm test                                   <span class="c"># server tests</span>
+npm run seed:recordings -- ../recordings  <span class="c"># the demo household</span>
+npm run scorecard -- &lt;folder of photos&gt;    <span class="c"># recognition</span>
+node ../android/e2e/run.mjs                <span class="c"># the whole loop, simulated glasses</span></pre></div></div>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2 class="h-2 reveal">Built on</h2>
+      <p class="reveal">The platforms, and the parts of them we leaned on.</p>
+      <div class="links">
+        <a class="link-card reveal" href="https://wearables.developer.meta.com/docs/develop/dat/getting-started-toolkit"><b>Meta Device Access Toolkit</b><span>Camera, display, speech and motion from the phone.</span></a>
+        <a class="link-card reveal" style="--d:.05s" href="https://wearables.developer.meta.com/docs/develop/dat/display-overview/"><b>Display on Meta glasses</b><span>What the lens can show, and its limits.</span></a>
+        <a class="link-card reveal" style="--d:.1s" href="https://wearables.developer.meta.com/docs/mock-device-kit"><b>Mock Device Kit</b><span>Simulated glasses: where all our testing ran.</span></a>
+        <a class="link-card reveal" href="https://github.com/facebook/meta-wearables-dat-android"><b>DAT for Android</b><span>Meta's toolkit and samples on GitHub.</span></a>
+        <a class="link-card reveal" style="--d:.05s" href="https://ai.google.dev/gemini-api/docs/structured-output"><b>Gemini structured output</b><span>JSON against a schema: how the model only chooses.</span></a>
+        <a class="link-card reveal" style="--d:.1s" href="https://ai.google.dev/gemini-api/docs"><b>Gemini API</b><span>Flash-Lite models, audio understanding, the Decisions API.</span></a>
+        <a class="link-card reveal" href="https://cloudinary.com/documentation/transformation_reference"><b>Cloudinary transformations</b><span>fl_splice, e_zoompan, g_auto, so_auto and the rest.</span></a>
+        <a class="link-card reveal" style="--d:.05s" href="https://cloudinary.com/documentation/video_manipulation_and_delivery"><b>Cloudinary video</b><span>Making and delivering video by URL.</span></a>
+        <a class="link-card reveal" style="--d:.1s" href="https://www.hackjunction.com/"><b>Junction</b><span>The hackathon this was built at.</span></a>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2 class="h-2 reveal">Entered for</h2>
+      <div class="tracks">
+        <div class="track reveal"><span class="chip">Meta challenge</span><h3>First-person, beyond the phone</h3><p>Looking and asking are the whole interface, with a calm path for every failure, offline use and no display needed.</p><a href="technology.html#brief">Against the brief →</a></div>
+        <div class="track reveal" style="--d:.06s"><span class="chip">Best Use of Gemini API</span><h3>Four jobs, all choices</h3><p>Decisions API recognition with confirmation, answer matching, memory lanes timed by listening, and transcripts.</p><a href="technology.html#rule">The rule →</a></div>
+        <div class="track reveal" style="--d:.12s"><span class="chip">Cloudinary</span><h3>The film is an address</h3><p>A family's phone photos become a 264 × 264 silent film for the lens, as one transformation URL.</p><a href="technology.html#lanes">Build one →</a></div>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2 class="h-2 reveal">Sources</h2>
+      <p class="reveal">Every fact on this site was checked against its source in November 2026. The full list, with caveats, is in <a href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/docs/evidence.md" style="color:var(--accent)">docs/evidence.md</a>.</p>
+      <ul class="sources">
+        <li class="reveal"><b>57 million people were living with dementia worldwide in 2021</b><span>WHO dementia fact sheet · </span><a href="https://www.who.int/news-room/fact-sheets/detail/dementia">who.int/news-room/fact-sheets/detail/dementia</a></li>
+        <li class="reveal"><b>Family and friends give on average five hours of care and supervision a day</b><span>WHO dementia fact sheet, 2019 data · </span><a href="https://www.who.int/news-room/fact-sheets/detail/dementia">who.int</a></li>
+        <li class="reveal"><b>Repetitive questioning: the person often doesn't remember the answer, and may need an emotional rather than factual response</b><span>Alzheimer's Society · </span><a href="https://www.alzheimers.org.uk/about-dementia/symptoms-and-diagnosis/symptoms/repetitive-behaviour">alzheimers.org.uk</a></li>
+        <li class="reveal"><b>Verbal repetition was a treatment target for 47% of 1,707 people with dementia; repeated questions its most common form</b><span>Reeve et al., International Psychogeriatrics, 2017 · </span><a href="https://doi.org/10.1017/S1041610216002180">doi.org/10.1017/S1041610216002180</a></li>
+        <li class="reveal"><b>Reminiscence: effects are inconsistent and often small</b><span>Woods et al., Cochrane, 2018 · </span><a href="https://www.cochrane.org/evidence/CD001120_reminiscence-therapy-dementia">cochrane.org</a></li>
+        <li class="reveal"><b>Recorded family voices (simulated presence): no conclusions could be drawn</b><span>Abraha et al., Cochrane, 2020 · </span><a href="https://www.cochrane.org/evidence/CD011882_simulated-presence-therapy-dementia">cochrane.org</a></li>
+        <li class="reveal"><b>What exists already: CrossSense, smart-glasses software that names objects, won the Longitude Prize on Dementia</b><span>Challenge Works · </span><a href="https://challengeworks.org/challenge-prizes/longitude-prize-on-dementia/">challengeworks.org</a></li>
+      </ul>
+      <div class="caveat reveal" style="margin-top:16px">Memory Lane is informed by reminiscence and carer-communication guidance. It is not clinically proven, has not been tested with people living with dementia, and is not a treatment.</div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div><a class="wordmark" href="index.html"><img src="img/memorylane-mark-white.svg" alt="" width="28" height="28">MemoryLane</a><p class="footer__tag">Your family, there when you need them. A support and comfort aid, not a treatment. Not yet tested with people living with dementia.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="index.html#try">Try it</a></li><li><a href="technology.html">How it works</a></li><li><a href="resources.html">Build &amp; links</a></li></ul></div>
+      <div><h4>Code</h4><ul><li><a href="https://github.com/CosmicallyCosmo/MemoryLane">GitHub repository</a></li><li><a href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/LICENSE">MIT licence</a></li><li><a href="https://github.com/CosmicallyCosmo/MemoryLane/blob/main/THIRD_PARTY_NOTICES.md">Third-party notices</a></li></ul></div>
+      <div><h4>Built with</h4><ul><li><a href="https://wearables.developer.meta.com">Meta Wearables DAT</a></li><li><a href="https://ai.google.dev/gemini-api/docs">Gemini API</a></li><li><a href="https://cloudinary.com/documentation">Cloudinary</a></li></ul></div>
+    </div>
+    <div class="footer__base"><span>MIT licence. Lexend and Source Serif 4 under the SIL Open Font License.</span><span>Junction 2026</span></div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

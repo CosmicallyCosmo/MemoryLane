@@ -1,0 +1,20 @@
+{
+  "name": "memorylane-server",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "dev": "node --env-file-if-exists=.env --watch src/index.js",
+    "test": "node --test test/api.test.js test/auth.test.js test/family.test.js test/profiles.test.js test/lane.test.js test/lane-gemini.test.js test/decisions.test.js test/rehearsal.test.js test/heart.test.js test/person-lane.test.js test/cloudinary.test.js test/transcript.test.js",
+    "scorecard": "node scripts/scorecard.mjs",
+    "seed:recordings": "node --env-file-if-exists=.env scripts/seed-recordings.mjs",
+    "start:recordings": "node --env-file=recordings.env --env-file-if-exists=.env src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "sharp": "^0.35.5"
+  }
+}

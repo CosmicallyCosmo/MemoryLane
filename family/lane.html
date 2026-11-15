@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0b0907" />
+    <title>Memory lane</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #0b0907;
+        color: #fbf6ec;
+        font: 20px/1.4 Georgia, "Times New Roman", serif;
+        overflow: hidden;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Fixed and 100%, not 100vh: a WebView can lay the page out before it has a height. */
+      canvas {
+        position: fixed;
+        inset: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .controls {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: max(28px, env(safe-area-inset-bottom));
+        display: flex;
+        justify-content: center;
+        transition: opacity 1.2s ease;
+      }
+      .controls.quiet {
+        opacity: 0;
+        pointer-events: none;
+      }
+      button {
+        min-width: 180px;
+        min-height: 64px;
+        padding: 0 32px;
+        border: 0;
+        border-radius: 32px;
+        background: rgba(251, 246, 236, 0.92);
+        color: #24211d;
+        font: 600 22px/1 system-ui, sans-serif;
+      }
+      button:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 3px;
+      }
+      .message {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+        text-align: center;
+      }
+      .message[hidden] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="stage" role="img" aria-label="Memory lane"></canvas>
+    <p class="message" id="message">Getting the memories ready…</p>
+    <div class="controls" id="controls" hidden><button type="button" id="toggle">Play</button></div>
+    <script type="module" src="/src/lane-page.js"></script>
+  </body>
+</html>

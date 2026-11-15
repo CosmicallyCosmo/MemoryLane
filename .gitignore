@@ -1,0 +1,28 @@
+# Node
+node_modules
+dist
+
+# Secrets
+.env
+.env.*
+
+# Server data: family photos, recordings and the event log never go in git
+server/data*
+recordings/
+
+# Local Claude Code working files
+.claude/
+CLAUDE.md
+
+# Android build outputs
+android/.gradle
+android/build
+android/app/build
+android/local.properties
+android/.kotlin
+android/.idea
+*.iml
+*.apk
+
+# A person's memory lane clips, for seed-lane.mjs to upload; the server keeps its copies in Cloudinary
+lane/media

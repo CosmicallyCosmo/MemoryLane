@@ -1,0 +1,14 @@
+<!-- The app's icon: the MemoryLane mark on white, inside the part of the icon every launcher shows. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#FFFFFF" android:pathData="M0,0h108v108h-108z" />
+    <group android:translateX="29" android:translateY="29" android:scaleX="0.098" android:scaleY="0.098">
+        <path android:fillColor="#45C3CF" android:pathData="M350,56m-55,0a55,55 0,1 1,110 0a55,55 0,1 1,-110 0" />
+        <path android:strokeColor="#45C3CF" android:strokeWidth="80" android:strokeLineCap="round"
+            android:pathData="M255,280a95,95 0,0 1,190 0v189" />
+        <path android:fillColor="#15586A" android:pathData="M160,56m-55,0a55,55 0,1 1,110 0a55,55 0,1 1,-110 0" />
+        <path android:strokeColor="#15586A" android:strokeWidth="80" android:strokeLineCap="round"
+            android:pathData="M65,469V280a95,95 0,0 1,190 0v189" />
+    </group>
+</vector>

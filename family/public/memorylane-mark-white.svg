@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510" fill="none" stroke-width="80" stroke-linecap="round">
+  <!-- The MemoryLane mark for dark ground: both figures in white, the second a little quieter so the pair still reads as two. -->
+  <g opacity="0.7">
+    <circle cx="350" cy="56" r="55" fill="#fff"/>
+    <path d="M255 280a95 95 0 0 1 190 0v189" stroke="#fff"/>
+  </g>
+  <circle cx="160" cy="56" r="55" fill="#fff"/>
+  <path d="M65 469V280a95 95 0 0 1 190 0v189" stroke="#fff"/>
+</svg>

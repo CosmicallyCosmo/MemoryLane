@@ -1,0 +1,11 @@
+<!-- The MemoryLane mark: two figures side by side whose shoulders make the m. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="34dp" android:height="34dp"
+    android:viewportWidth="510" android:viewportHeight="510">
+    <path android:fillColor="#45C3CF" android:pathData="M350,56m-55,0a55,55 0,1 1,110 0a55,55 0,1 1,-110 0" />
+    <path android:strokeColor="#45C3CF" android:strokeWidth="80" android:strokeLineCap="round"
+        android:pathData="M255,280a95,95 0,0 1,190 0v189" />
+    <path android:fillColor="#15586A" android:pathData="M160,56m-55,0a55,55 0,1 1,110 0a55,55 0,1 1,-110 0" />
+    <path android:strokeColor="#15586A" android:strokeWidth="80" android:strokeLineCap="round"
+        android:pathData="M65,469V280a95,95 0,0 1,190 0v189" />
+</vector>

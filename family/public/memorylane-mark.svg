@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510" fill="none" stroke-width="80" stroke-linecap="round">
+  <!-- Two figures side by side whose shoulders make the m of MemoryLane. -->
+  <circle cx="350" cy="56" r="55" fill="#45c3cf"/>
+  <path d="M255 280a95 95 0 0 1 190 0v189" stroke="#45c3cf"/>
+  <circle cx="160" cy="56" r="55" fill="#15586a"/>
+  <path d="M65 469V280a95 95 0 0 1 190 0v189" stroke="#15586a"/>
+</svg>
